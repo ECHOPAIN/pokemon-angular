@@ -1,15 +1,17 @@
-<div *ngFor="let pokemon of pokemons">
-  <div class="container">
-    <div class="card">
-      <div class="content">
-        <h2>{{pokemon.id}}</h2>
-        <div class="imgBx"><img src={{pokemon.front_default}}></div>
-        <div class="contentBx">
-          <h3>{{pokemon.name}}</h3>
+<div class="pokedex">
+  <div *ngFor="let pokemon of pokemons">
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <h2>{{pokemon.id}}</h2>
+          <div class="imgBx"><img src={{pokemon.front_default}}></div>
+          <div class="contentBx">
+            <h3>{{pokemon.name}}</h3>
+          </div>
+        </div>
+        <div class="btnBx">
+          <a href="#">More details</a>
         </div>
       </div>
-      <div class="btnBx">
-        <a href="#">More details</a>
-      </div>
-    </div>
+  </div>
 </div>

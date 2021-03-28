@@ -1,19 +1,17 @@
-*
+.app
 {
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start
 }
 
-app-pokedex{
-  position: relative;
-  margin-top: -100vh;
-}
 .background
 {
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   background: #161623;
   height: 100vh;
 }
@@ -39,4 +37,21 @@ app-pokedex{
   height: 100%;
   background: linear-gradient(#2196f3, #e91e63);
   clip-path: circle(20% at 10% 10%);
+}
+
+.nav
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.content
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 300px;
+  bottom: 0;
 }

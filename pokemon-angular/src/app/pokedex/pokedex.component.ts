@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pokemon } from '../pokemon';
+import { RESULTS } from '../mock-pokemons';
 
 @Component({
   selector: 'app-pokedex',
@@ -7,15 +8,19 @@ import { Pokemon } from '../pokemon';
   styleUrls: ['./pokedex.component.css']
 })
 export class PokedexComponent implements OnInit {
-  pokemon: Pokemon = {
-    id: 25,
-    name: 'Pikachu',
-    front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png'
-  };
+  pokemons: Pokemon[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
+    RESULTS.forEach(element => {
+      let pokemon = {} as Pokemon;
+      let splitedUrl = element.url.split('/');
+      pokemon.id = +splitedUrl[splitedUrl.length-2];
+      pokemon.name = element.name;
+      pokemon.front_default = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'+pokemon.id+'.png';
+      this.pokemons.push(pokemon);
+    });
   }
 
 }

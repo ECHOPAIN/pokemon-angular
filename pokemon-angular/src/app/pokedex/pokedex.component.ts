@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pokemon } from '../pokemon';
-import { RESULTS } from '../mock-pokemons';
+import { PokemonService } from '../pokemon.service';
 
 @Component({
   selector: 'app-pokedex',
@@ -10,17 +10,15 @@ import { RESULTS } from '../mock-pokemons';
 export class PokedexComponent implements OnInit {
   pokemons: Pokemon[] = [];
 
-  constructor() { }
+  constructor(private pokemonService: PokemonService) { }
 
   ngOnInit(): void {
-    RESULTS.forEach(element => {
-      let pokemon = {} as Pokemon;
-      let splitedUrl = element.url.split('/');
-      pokemon.id = +splitedUrl[splitedUrl.length-2];
-      pokemon.name = element.name;
-      pokemon.front_default = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'+pokemon.id+'.png';
-      this.pokemons.push(pokemon);
-    });
+    this.getPokemons();
+  }
+
+  getPokemons(): void {
+    this.pokemonService.getPokemons()
+      .subscribe(pokemons => this.pokemons = pokemons);
   }
 
 }

@@ -6,13 +6,15 @@ import { PokedexComponent } from './pokedex/pokedex.component';
 import { NavmenuComponent } from './navmenu/navmenu.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PokedexComponent,
     NavmenuComponent,
-    PokemonDetailComponent
+    PokemonDetailComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

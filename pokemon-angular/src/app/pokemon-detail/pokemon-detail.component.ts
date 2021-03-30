@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { Pokemon } from '../pokemon';
+import { PokemonDetail } from '../model/pokemon/pokemon';
 import { PokemonService } from '../pokemon.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { PokemonService } from '../pokemon.service';
   styleUrls: ['./pokemon-detail.component.css']
 })
 export class PokemonDetailComponent implements OnInit {
-  pokemon: Pokemon = {} as Pokemon;
+  pokemon: PokemonDetail = {} as PokemonDetail;
 
   constructor(
     private route: ActivatedRoute,

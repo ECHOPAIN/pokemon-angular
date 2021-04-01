@@ -1,2 +1,15 @@
-<p>pokemon-detail works!</p>
-<p>{{pokemon.name}}</p>
+<div class="detail">
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <h2>{{pokemon.id}}</h2>
+          <div class="imgBx"><img src={{pokemon.sprites.front_default}}></div>
+          <div class="contentBx">
+          <h3>{{pokemon.name}}</h3>
+        </div>
+        <div class="typeBx">
+          <h3 *ngFor="let types of pokemon.types">{{types.type.name}}</h3>
+        </div>
+      </div>
+    </div>
+</div>

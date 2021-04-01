@@ -1,0 +1,98 @@
+.detail{
+  position: absolute;
+}
+
+.container
+{
+  position :relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.container .card
+{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 15px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.container .card .content
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  top: 30px;
+}
+
+.container .card .content h2
+{
+  position: absolute;
+  top: -130px;
+  right: -40px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.container .card .content .imgBx
+{
+  position: relative;
+  width: 170px;
+  height: 170px;
+  overflow: hidden;
+}
+
+.container .card .content .imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container .card .content .contentBx h3
+{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+
+.container .card .content .typeBx
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.container .card .content .typeBx h3
+{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 10px 0;
+  line-height: 1.1em;
+}

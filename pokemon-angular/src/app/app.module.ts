@@ -8,17 +8,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
 import { ProfileComponent } from './profile/profile.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     PokedexComponent,
     NavmenuComponent,
     PokemonDetailComponent,
-    ProfileComponent
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

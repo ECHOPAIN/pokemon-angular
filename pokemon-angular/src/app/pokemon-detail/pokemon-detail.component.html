@@ -1,79 +1,10 @@
-<div class="detail">
-    <div class="container">
-      <div class="card">
-        <div class="content">
-          <h2>{{pokemon.id}}</h2>
-          <div class="imgBx"><img src={{pokemon.sprites.front_default}}></div>
-          <div class="contentBx">
-          <h3>{{pokemon.name}}</h3>
-        </div>
-        <div class="typeBx">
-          <h3 *ngFor="let types of pokemon.types">{{types.type.name}}</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card">
-        <div class="content">
-          <div class="imgBx"><img src={{pokemon.sprites.back_default}}></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card">
-        <div class="content">
-          <div class="imgBx"><img src={{pokemon.sprites.back_female}}></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card">
-        <div class="content">
-          <div class="imgBx"><img src={{pokemon.sprites.back_shiny}}></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card">
-        <div class="content">
-          <div class="imgBx"><img src={{pokemon.sprites.back_shiny_female}}></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card">
-        <div class="content">
-          <div class="imgBx"><img src={{pokemon.sprites.front_default}}></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card">
-        <div class="content">
-          <div class="imgBx"><img src={{pokemon.sprites.front_female}}></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card">
-        <div class="content">
-          <div class="imgBx"><img src={{pokemon.sprites.front_shiny}}></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card">
-        <div class="content">
-          <div class="imgBx"><img src={{pokemon.sprites.front_shiny_female}}></div>
-        </div>
-      </div>
-    </div>
+<div class="container">
+  <div class="content">
+    <h2>{{pokemon.name}}</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <a href="#">Read More</a>
+  </div>
+  <div class="imgBx">
+    <img src={{pokemon.sprites.front_default}}>
+  </div>
 </div>

@@ -9,6 +9,7 @@ import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.componen
 import { ProfileComponent } from './profile/profile.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     NavmenuComponent,
     PokemonDetailComponent,
     ProfileComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

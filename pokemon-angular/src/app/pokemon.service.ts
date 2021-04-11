@@ -18,7 +18,7 @@ export class PokemonService {
   getPokemons(): Observable<Pokemon[]>  {
     let pokemons: Pokemon[] = [];
 
-    for (let i = 0; i < 251; i++) {
+    for (let i = 0; i < 10/*251*/; i++) {
       let pokemon = {} as Pokemon;
       let splitedUrl = POKEMONS.results[i].url.split('/');
       pokemon.id = +splitedUrl[splitedUrl.length-2];

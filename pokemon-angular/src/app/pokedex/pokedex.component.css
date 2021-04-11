@@ -3,13 +3,14 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  position: absolute;
+  /*position: absolute;*/
+  height: calc(100vh - 200px);
 }
 
 .container
 {
   position :relative;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;

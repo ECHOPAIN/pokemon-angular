@@ -21,6 +21,11 @@ section
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 
 /*
